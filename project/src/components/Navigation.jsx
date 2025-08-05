@@ -16,7 +16,17 @@ function Navigation() {
                 : 'border-transparent text-gray-300 hover:text-white hover:border-gray-300'
             }`}
           >
-            Flash Cards
+            Home
+          </Link>
+          <Link 
+            to="/services" 
+            className={`py-4 px-6 border-b-2 transition-colors ${
+              location.pathname === '/services' 
+                ? 'border-white text-white' 
+                : 'border-transparent text-gray-300 hover:text-white hover:border-gray-300'
+            }`}
+          >
+            Services
           </Link>
           <Link 
             to="/about" 

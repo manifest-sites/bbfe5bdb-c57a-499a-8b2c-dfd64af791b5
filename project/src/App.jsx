@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Monetization from './components/monetization/Monetization'
-import FlashCardApp from './components/FlashCardApp'
+import Home from './components/Home'
+import Services from './components/Services'
 import About from './components/About'
 import Navigation from './components/Navigation'
 
@@ -12,7 +13,8 @@ function App() {
       <Router>
         <Navigation />
         <Routes>
-          <Route path="/" element={<FlashCardApp />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </Router>
